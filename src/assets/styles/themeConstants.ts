@@ -1,15 +1,17 @@
 export const themeConstants = {
   colors: {
-    primary: "#1E88E5",
-    secondary: "#D32F2F",
-    background: "#FFFFFF",
-    surface: "#F5F5F5",
-    onPrimary: "#FFFFFF",
+    primary: "#2C2A4A", // Navy
+    secondary: "#4B4877", // Purple
+    background: "#2C2A4A", // Navy
+    contentLead: "#E3FEFE", // Baby blue
+    content: "#F9EAEA", // Cream
+    surface: "#4B4877", // Purple
+    onPrimary: "#E3FEFE",
     onSecondary: "#FFFFFF",
     onBackground: "#333333",
     onSurface: "#333333",
-    success: "#388E3C",
-    warning: "#FBC02D",
+    success: "#B6FBBD", // Green
+    warning: "#FBB6BE", // Red
     error: "#D32F2F",
   },
 
