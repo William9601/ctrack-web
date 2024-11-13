@@ -6,9 +6,9 @@ const defaultCardStyle = css<CardProps>`
   height: ${({ height }) => height};
   width: ${({ width }) => width};
   background-color: ${({ backgroundColor }) =>
-    backgroundColor || theme.surfaceColor};
-  border-radius: ${theme.borderRadiusMedium};
-  padding: ${({ padding }) => padding || theme.spacingSmall};
+    backgroundColor || theme.colors.surfaceColor};
+  border-radius: ${theme.borderRadius.borderRadiusMedium};
+  padding: ${({ padding }) => padding || theme.spacing.spacingSmall};
 `;
 
 export const StyledCard = styled.div<CardProps>`
@@ -17,5 +17,5 @@ export const StyledCard = styled.div<CardProps>`
 
 export const StyledCardWithShadow = styled.div<CardProps>`
   ${defaultCardStyle}
-  box-shadow: ${theme.shadowLight};
+  box-shadow: ${theme.shadow.shadowLight};
 `;

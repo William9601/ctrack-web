@@ -1,14 +1,10 @@
-// Typography.ts
 import styled, { css } from "styled-components";
-
-interface TypographyProps {
-  variant?: "h1" | "h2" | "h3" | "body" | "caption";
-  color?: string;
-}
+import { TypographyProps } from "./types";
+import theme from "../../assets/styles/theme";
 
 const variantStyles = {
   h1: css`
-    font-size: ${({ theme }) => theme.typography.fontSize.extraLarge};
+    font-size: ${({ theme }) => theme.typography.fontSize};
     font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
     line-height: ${({ theme }) => theme.typography.lineHeight.extraLarge};
   `,
@@ -35,7 +31,7 @@ const variantStyles = {
 };
 
 const Typography = styled.p<TypographyProps>`
-  color: ${({ color, theme }) => color || theme.colors.onSurface};
+  color: ${({ color }) => color || theme.colors.onSurfaceColor};
   margin: 0;
   ${({ variant }) => variant && variantStyles[variant]}
 `;
