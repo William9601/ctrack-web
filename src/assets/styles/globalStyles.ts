@@ -14,14 +14,14 @@ const GlobalStyles = createGlobalStyle`
   html {
     font-size: 100%; /* 16px */
     scroll-behavior: smooth;
-    background-color: ${({ theme }) => theme.colors.background};
-    color: ${({ theme }) => theme.colors.onBackground};
+    background-color: ${({ theme }) => theme.colors.backgroundColor};
+    color: ${({ theme }) => theme.colors.onBackgroundColor};
     font-family: ${({ theme }) => theme.typography.fontFamily};
   }
 
   body {
-    line-height: ${({ theme }) => theme.typography.lineHeight.medium};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
+    line-height: ${({ theme }) => theme.typography.lineHeightMedium};
+    font-weight: ${({ theme }) => theme.typography.fontWeightRegular};
     overflow-x: hidden;
     min-height: 100vh;
     margin: 0;
@@ -29,28 +29,28 @@ const GlobalStyles = createGlobalStyle`
 
   /* Typography defaults */
   h1, h2, h3, h4, h5, h6 {
-    font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
-    margin-bottom: ${({ theme }) => theme.spacing.small};
+    font-weight: ${({ theme }) => theme.typography.fontWeightBold};
+    margin-bottom: ${({ theme }) => theme.spacingSmall};
   }
 
-  h1 { font-size: ${({ theme }) => theme.typography.fontSize.extraLarge}; }
-  h2 { font-size: ${({ theme }) => theme.typography.fontSize.large}; }
-  h3 { font-size: ${({ theme }) => theme.typography.fontSize.medium}; }
-  h4, h5, h6 { font-size: ${({ theme }) => theme.typography.fontSize.small}; }
+  h1 { font-size: ${({ theme }) => theme.typography.fontSizeExtraLarge}; }
+  h2 { font-size: ${({ theme }) => theme.typography.fontSizeLarge}; }
+  h3 { font-size: ${({ theme }) => theme.typography.fontSizeMedium}; }
+  h4, h5, h6 { font-size: ${({ theme }) => theme.typography.fontSizeSmall}; }
 
   p, span, a, li {
-    font-size: ${({ theme }) => theme.typography.fontSize.medium};
-    color: ${({ theme }) => theme.colors.onBackground};
-    line-height: ${({ theme }) => theme.typography.lineHeight.medium};
+    font-size: ${({ theme }) => theme.typography.fontSizeMedium};
+    color: ${({ theme }) => theme.onBackgroundColor};
+    line-height: ${({ theme }) => theme.typography.lineHeightMedium};
   }
 
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.primaryColor};
     transition: color 0.2s ease;
 
     &:hover {
-      color: ${({ theme }) => theme.colors.secondary};
+      color: ${({ theme }) => theme.secondaryColor};
     }
   }
 
@@ -58,7 +58,7 @@ const GlobalStyles = createGlobalStyle`
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 ${({ theme }) => theme.spacing.medium};
+    padding: 0 ${({ theme }) => theme.spacingMedium};
   }
 `;
 

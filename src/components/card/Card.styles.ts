@@ -1,14 +1,13 @@
 import styled, { css } from "styled-components";
-import theme from "../../assets/styles/theme";
 import { CardProps } from "./types";
 
 const defaultCardStyle = css<CardProps>`
   height: ${({ height }) => height};
   width: ${({ width }) => width};
-  background-color: ${({ backgroundColor }) =>
+  background-color: ${({ theme, backgroundColor }) =>
     backgroundColor || theme.colors.surfaceColor};
-  border-radius: ${theme.borderRadius.borderRadiusMedium};
-  padding: ${({ padding }) => padding || theme.spacing.spacingSmall};
+  border-radius: ${({ theme }) => theme.borderRadius.borderRadiusSmall};
+  padding: ${({ theme, padding }) => padding || theme.spacing.spacingSmall};
 `;
 
 export const StyledCard = styled.div<CardProps>`
@@ -17,5 +16,5 @@ export const StyledCard = styled.div<CardProps>`
 
 export const StyledCardWithShadow = styled.div<CardProps>`
   ${defaultCardStyle}
-  box-shadow: ${theme.shadow.shadowLight};
+  box-shadow: ${({ theme }) => theme.shadow.shadowLight};
 `;

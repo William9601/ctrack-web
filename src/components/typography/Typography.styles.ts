@@ -1,37 +1,36 @@
 import styled, { css } from "styled-components";
 import { TypographyProps } from "./types";
-import theme from "../../assets/styles/theme";
 
 const variantStyles = {
   h1: css`
-    font-size: ${({ theme }) => theme.typography.fontSize};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
-    line-height: ${({ theme }) => theme.typography.lineHeight.extraLarge};
+    font-size: ${({ theme }) => theme.typography.fontSizeExtraLarge};
+    font-weight: ${({ theme }) => theme.typography.fontWeightBold};
+    line-height: ${({ theme }) => theme.typography.lineHeightExtraLarge};
   `,
   h2: css`
-    font-size: ${({ theme }) => theme.typography.fontSize.large};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
-    line-height: ${({ theme }) => theme.typography.lineHeight.large};
+    font-size: ${({ theme }) => theme.typography.fontSizeLarge};
+    font-weight: ${({ theme }) => theme.typography.fontWeighBold};
+    line-height: ${({ theme }) => theme.typography.lineHeightLarge};
   `,
   h3: css`
-    font-size: ${({ theme }) => theme.typography.fontSize.medium};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
-    line-height: ${({ theme }) => theme.typography.lineHeight.medium};
+    font-size: ${({ theme }) => theme.typography.fontSizeMedium};
+    font-weight: ${({ theme }) => theme.typography.fontWeightRegular};
+    line-height: ${({ theme }) => theme.typography.lineHeightMedium};
   `,
   body: css`
-    font-size: ${({ theme }) => theme.typography.fontSize.medium};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
-    line-height: ${({ theme }) => theme.typography.lineHeight.medium};
+    font-size: ${({ theme }) => theme.typography.fontSizeMedium};
+    font-weight: ${({ theme }) => theme.typography.fontWeightRegular};
+    line-height: ${({ theme }) => theme.typography.lineHeightMedium};
   `,
   caption: css`
-    font-size: ${({ theme }) => theme.typography.fontSize.small};
-    font-weight: ${({ theme }) => theme.typography.fontWeight.light};
-    line-height: ${({ theme }) => theme.typography.lineHeight.small};
+    font-size: ${({ theme }) => theme.typography.fontSizeSmall};
+    font-weight: ${({ theme }) => theme.typography.fontWeightLight};
+    line-height: ${({ theme }) => theme.typography.lineHeightSmall};
   `,
 };
 
 const Typography = styled.p<TypographyProps>`
-  color: ${({ color }) => color || theme.colors.onSurfaceColor};
+  color: ${({ theme, color }) => color || theme.colors.onSurfaceColor};
   margin: 0;
   ${({ variant }) => variant && variantStyles[variant]}
 `;
