@@ -1,6 +1,7 @@
+import { DefaultTheme } from "styled-components/dist/types";
 import { themeConstants } from "./themeConstants";
 
-export const theme = {
+export const theme: DefaultTheme = {
   // Color tokens
   colors: {
     primaryColor: themeConstants.colors.primary,

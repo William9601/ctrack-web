@@ -9,7 +9,7 @@ const variantStyles = {
   `,
   h2: css`
     font-size: ${({ theme }) => theme.typography.fontSizeLarge};
-    font-weight: ${({ theme }) => theme.typography.fontWeighBold};
+    font-weight: ${({ theme }) => theme.typography.fontWeightBold};
     line-height: ${({ theme }) => theme.typography.lineHeightLarge};
   `,
   h3: css`

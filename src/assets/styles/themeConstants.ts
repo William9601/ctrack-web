@@ -64,4 +64,5 @@ export const themeConstants = {
     largeDesktop: "1440px",
   },
 };
-export type Theme = typeof themeConstants;
+
+// export type DefaultTheme = typeof themeConstants;
