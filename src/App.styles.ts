@@ -4,8 +4,8 @@ import theme from "./assets/styles/theme";
 export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   min-height: 100vh;
   min-width: 100vw;
   background-color: ${theme.colors.backgroundColor};

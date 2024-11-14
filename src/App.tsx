@@ -14,7 +14,7 @@ function App() {
         <Card variant='default' height='12rem' width='20rem'>
           <div>
             <PrimaryButton>Here</PrimaryButton>
-            <Typography variant='h1'>hello</Typography>
+            <Typography variant='h1'>Hello</Typography>
           </div>
         </Card>
       </AppContainer>
