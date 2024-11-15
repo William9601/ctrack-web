@@ -34,3 +34,13 @@ export default {
 This app uses styled components to provide styles to our custom components.
 In `styled.d.ts`, we pass the types to styled components. These types correlate to our theme an allow typescript to infer the tokens used.
 We have a `themeConstants.ts` file that serves as an example of a json file that a larger design system would provide. We use these design tokens in `theme.ts`. This theme is passed into the app in the `App.tsx` via the `ThemeProvider`. We could have also just imported the theme into the styles but this would mean that the theme could not be dynamically updated for example using a Light/Dark theme.
+
+### Icons
+
+We use vite-plugin-svgr to use SVGs as components. Icons are added to the `assets/icons` file. We export them in the `index.ts` file.
+
+## Config
+
+### Path alias
+
+In `vite.config.ts` we define the path alias so that we don't have to write long file paths.
