@@ -6,13 +6,17 @@ import { Card } from "./components/card/Card";
 import Typography from "./components/typography/Typography.styles";
 import theme from "./assets/styles/theme";
 import { CtrackLogo } from "./assets/icons";
+import styles from "./App.module.scss";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <AppContainer>
-        <CtrackLogo />
+        <div className={styles.logoContainer}>
+          <CtrackLogo className={styles.logo} />
+          <h1 className={styles.logoString}>c-track.one</h1>
+        </div>
         <Card
           variant='default'
           height='12rem'

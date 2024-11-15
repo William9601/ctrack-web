@@ -25,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
     min-height: 100vh;
     margin: 0;
+    
   }
 
   /* Typography defaults */
