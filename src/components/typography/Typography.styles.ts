@@ -30,7 +30,7 @@ const variantStyles = {
 };
 
 const Typography = styled.p<TypographyProps>`
-  color: ${({ theme, color }) => color || theme.colors.onSurfaceColor};
+  color: ${({ theme, color }) => theme.colors[color || "onSurfaceColor"]};
   margin: 0;
   ${({ variant }) => variant && variantStyles[variant]}
 `;

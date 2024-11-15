@@ -5,7 +5,7 @@ export interface CardProps {
   height?: string;
   width?: string;
   backgroundColor?: keyof typeof theme.colors;
-  padding?: keyof typeof theme.spacing;
+  padding: keyof typeof theme.spacing;
   children: React.ReactNode;
 }
 

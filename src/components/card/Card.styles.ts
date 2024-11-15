@@ -5,9 +5,9 @@ const defaultCardStyle = css<CardProps>`
   height: ${({ height }) => height};
   width: ${({ width }) => width};
   background-color: ${({ theme, backgroundColor }) =>
-    backgroundColor || theme.colors.surfaceColor};
+    theme.colors[backgroundColor || "surfaceColor"]};
   border-radius: ${({ theme }) => theme.borderRadius.borderRadiusSmall};
-  padding: ${({ theme, padding }) => padding || theme.spacing.spacingSmall};
+  padding: ${({ theme, padding }) => theme.spacing[padding]};
 `;
 
 export const StyledCard = styled.div<CardProps>`
