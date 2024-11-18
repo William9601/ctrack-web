@@ -1,0 +1,54 @@
+// Colors
+$colors-primary: #2c2a4a; // Navy
+$colors-secondary: #4b4877; // Purple
+$colors-background: #2c2a4a; // Navy
+$colors-content-lead: #e3fefe; // Baby blue
+$colors-content: #f9eaea; // Cream
+$colors-surface: #4b4877; // Purple
+$colors-on-primary: #e3fefe;
+$colors-on-secondary: #ffffff;
+$colors-on-background: #333333;
+$colors-on-surface: #333333;
+$colors-success: #b6fbbd; // Green
+$colors-warning: #fbb6be; // Red
+$colors-error: #d32f2f;
+
+// Typography
+$typography-font-family: "Roboto", sans-serif;
+$typography-font-size-small: 12px;
+$typography-font-size-medium: 16px;
+$typography-font-size-large: 20px;
+$typography-font-size-extra-large: 24px;
+$typography-font-weight-light: 300;
+$typography-font-weight-regular: 400;
+$typography-font-weight-bold: 700;
+$typography-line-height-small: 16px;
+$typography-line-height-medium: 24px;
+$typography-line-height-large: 28px;
+$typography-line-height-extra-large: 32px;
+
+// Spacing
+$spacing-xsmall: 4px;
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 24px;
+$spacing-xlarge: 32px;
+$spacing-xxlarge: 48px;
+
+// Border Radius
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 16px;
+
+// Shadows
+$shadows-light: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+$shadows-medium: 0px 3px 6px rgba(0, 0, 0, 0.16),
+  0px 3px 6px rgba(0, 0, 0, 0.23);
+$shadows-dark: 0px 10px 20px rgba(0, 0, 0, 0.19),
+  0px 6px 6px rgba(0, 0, 0, 0.23);
+
+// Breakpoints
+$breakpoints-mobile: 480px;
+$breakpoints-tablet: 768px;
+$breakpoints-desktop: 1024px;
+$breakpoints-large-desktop: 1440px;

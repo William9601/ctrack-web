@@ -37,12 +37,12 @@ export const themeConstants = {
   },
 
   spacing: {
-    xsmall: "4px",
-    small: "8px",
-    medium: "16px",
-    large: "24px",
-    xlarge: "32px",
-    xxlarge: "48px",
+    xsmall: "0.25rem",
+    small: "0.5rem",
+    medium: "1rem",
+    large: "1.5rem",
+    xlarge: "2rem",
+    xxlarge: "3rem",
   },
 
   borderRadius: {

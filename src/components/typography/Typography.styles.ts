@@ -27,6 +27,12 @@ const variantStyles = {
     font-weight: ${({ theme }) => theme.typography.fontWeightLight};
     line-height: ${({ theme }) => theme.typography.lineHeightSmall};
   `,
+  logo: css`
+    font-size: 2rem;
+    font-weight: ${({ theme }) => theme.typography.fontWeightBold};
+    line-height: ${({ theme }) => theme.typography.lineHeightExtraLarge};
+    font-family: "Kdam Thmor Pro", sans-serif;
+  `,
 };
 
 const Typography = styled.p<TypographyProps>`
