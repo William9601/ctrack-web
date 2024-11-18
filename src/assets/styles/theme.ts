@@ -7,6 +7,8 @@ export const theme: DefaultTheme = {
     primaryColor: themeConstants.colors.primary,
     secondaryColor: themeConstants.colors.secondary,
     backgroundColor: themeConstants.colors.background,
+    contentLeadColor: themeConstants.colors.contentLead,
+    contentColor: themeConstants.colors.content,
     surfaceColor: themeConstants.colors.surface,
     onPrimaryColor: themeConstants.colors.onPrimary,
     onSecondaryColor: themeConstants.colors.onSecondary,

@@ -22,6 +22,11 @@ const variantStyles = {
     font-weight: ${({ theme }) => theme.typography.fontWeightRegular};
     line-height: ${({ theme }) => theme.typography.lineHeightMedium};
   `,
+  lead: css`
+    font-size: ${({ theme }) => theme.typography.fontSizeMedium};
+    font-weight: ${({ theme }) => theme.typography.fontWeightRegular};
+    line-height: ${({ theme }) => theme.typography.lineHeightMedium};
+  `,
   caption: css`
     font-size: ${({ theme }) => theme.typography.fontSizeSmall};
     font-weight: ${({ theme }) => theme.typography.fontWeightLight};

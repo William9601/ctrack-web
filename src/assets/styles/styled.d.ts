@@ -6,6 +6,8 @@ declare module "styled-components" {
       primaryColor: string;
       secondaryColor: string;
       backgroundColor: string;
+      contentLeadColor: string;
+      contentColor: string;
       surfaceColor: string;
       onPrimaryColor: string;
       onSecondaryColor: string;

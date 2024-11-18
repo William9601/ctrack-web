@@ -5,4 +5,11 @@ export interface TypographyProps {
   color?: keyof typeof theme.colors;
 }
 
-type TypographyVariant = "h1" | "h2" | "h3" | "body" | "caption" | "logo";
+type TypographyVariant =
+  | "h1"
+  | "h2"
+  | "h3"
+  | "body"
+  | "lead"
+  | "caption"
+  | "logo";
