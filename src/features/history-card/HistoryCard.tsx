@@ -1,17 +1,30 @@
+import { AddBox } from "../../assets/icons";
+import { TextButton } from "../../components/Button.styles";
 import { Card } from "../../components/card/Card";
 import { Flex } from "../../components/flex/Flex.styles";
 import Typography from "../../components/typography/Typography.styles";
 
-export const InputCard = () => {
+export const HistoryCard = () => {
+  // const [showInputCard, setShowInputCard] = useState(false);
+
+  const onClickAddButton = () => {
+    console.log("Click");
+  };
+
   return (
     <Card
       variant='default'
       backgroundColor='secondaryColor'
       padding='spacingMedium'>
       <Flex gap='0.5rem' direction='column'>
-        <Typography variant='h1' color='contentLeadColor'>
-          Bitcoin
-        </Typography>
+        <Flex justify='space-between'>
+          <Typography variant='h1' color='contentLeadColor'>
+            Bitcoin
+          </Typography>
+          <TextButton onClick={() => onClickAddButton()}>
+            <AddBox />
+          </TextButton>
+        </Flex>
         <Typography variant='lead' color='contentLeadColor'>
           Current Value £72,427
         </Typography>

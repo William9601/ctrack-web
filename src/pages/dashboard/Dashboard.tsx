@@ -4,7 +4,7 @@ import {
   GridItemThree,
   GridItemTwo,
 } from "./Dashboard.styles";
-import { InputCard } from "../../features/history-card/InputCard";
+import { HistoryCard } from "../../features/history-card/HistoryCard";
 import { PortfolioCard } from "../../features/portfolio-card/PortfolioCard";
 import { TotalCard } from "../../features/total-card/TotalCard";
 
@@ -18,7 +18,7 @@ export const Dashboard = () => {
         <PortfolioCard />
       </GridItemTwo>
       <GridItemThree>
-        <InputCard />
+        <HistoryCard />
       </GridItemThree>
     </GridContainer>
   );
