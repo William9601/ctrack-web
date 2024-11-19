@@ -4,7 +4,7 @@ import { AppContainer, LogoContainer } from "./App.styles";
 import Typography from "./components/typography/Typography.styles";
 import theme from "./assets/styles/theme";
 import { CtrackLogo } from "./assets/icons";
-import { Dashboard } from "./features/dashboard/Dashboard";
+import { Dashboard } from "./pages/dashboard/Dashboard";
 
 function App() {
   return (

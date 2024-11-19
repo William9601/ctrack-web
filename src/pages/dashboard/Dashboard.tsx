@@ -4,9 +4,9 @@ import {
   GridItemThree,
   GridItemTwo,
 } from "./Dashboard.styles";
-import { InputCard } from "./InputCard";
-import { PortfolioCard } from "./PortfolioCard";
-import { TotalCard } from "./TotalCard";
+import { InputCard } from "../../features/history-card/InputCard";
+import { PortfolioCard } from "../../features/portfolio-card/PortfolioCard";
+import { TotalCard } from "../../features/total-card/TotalCard";
 
 export const Dashboard = () => {
   return (

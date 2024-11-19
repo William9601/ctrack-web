@@ -1,7 +1,7 @@
 import { Card } from "../../components/card/Card";
 import { Flex } from "../../components/flex/Flex.styles";
 import Typography from "../../components/typography/Typography.styles";
-import { TotalTypography } from "./Dashboard.styles";
+import { TotalTypography } from "../../pages/dashboard/Dashboard.styles";
 
 export const TotalCard = () => {
   return (
