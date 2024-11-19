@@ -1,11 +1,10 @@
-import { Card } from "../../components/card/Card";
-import Typography from "../../components/typography/Typography.styles";
 import {
   GridContainer,
   GridItemOne,
   GridItemThree,
   GridItemTwo,
 } from "./Dashboard.styles";
+import { InputCard } from "./InputCard";
 import { PortfolioCard } from "./PortfolioCard";
 import { TotalCard } from "./TotalCard";
 
@@ -19,16 +18,7 @@ export const Dashboard = () => {
         <PortfolioCard />
       </GridItemTwo>
       <GridItemThree>
-        <Card
-          variant='default'
-          backgroundColor='secondaryColor'
-          padding='spacingMedium'>
-          <div>
-            <Typography variant='h1' color='errorColor'>
-              Three
-            </Typography>
-          </div>
-        </Card>
+        <InputCard />
       </GridItemThree>
     </GridContainer>
   );

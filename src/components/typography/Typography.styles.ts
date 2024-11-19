@@ -4,12 +4,12 @@ import { TypographyProps } from "./types";
 const variantStyles = {
   h1: css`
     font-size: ${({ theme }) => theme.typography.fontSizeExtraLarge};
-    font-weight: ${({ theme }) => theme.typography.fontWeightBold};
+    font-weight: ${({ theme }) => theme.typography.fontWeightRegular};
     line-height: ${({ theme }) => theme.typography.lineHeightExtraLarge};
   `,
   h2: css`
     font-size: ${({ theme }) => theme.typography.fontSizeLarge};
-    font-weight: ${({ theme }) => theme.typography.fontWeightBold};
+    font-weight: ${({ theme }) => theme.typography.fontWeightRegular};
     line-height: ${({ theme }) => theme.typography.lineHeightLarge};
   `,
   h3: css`

@@ -8,9 +8,19 @@ import {
 
 export const PortfolioCard = () => {
   const data = [
-    { coin: "Bitcoin", invested: "$1000", profit: "$200", total: "$1200" },
-    { coin: "Ethereum", invested: "$1500", profit: "$300", total: "$1800" },
-    { coin: "Cardano", invested: "$2000", profit: "$400", total: "$2400" },
+    { coin: "Bitcoin", invested: "$1000", profit: "$200 (5%)", total: "$1200" },
+    {
+      coin: "Ethereum",
+      invested: "$1500",
+      profit: "$300 (21%)",
+      total: "$1800",
+    },
+    {
+      coin: "Cardano",
+      invested: "$2000",
+      profit: "$400 (12%)",
+      total: "$2400",
+    },
   ];
 
   return (

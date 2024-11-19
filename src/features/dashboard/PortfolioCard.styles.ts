@@ -18,4 +18,5 @@ export const TableRow = styled.tr``;
 export const TableCell = styled.td`
   padding: ${({ theme }) => theme.spacing.spacingSmall};
   color: ${({ theme }) => theme.colors.contentColor};
+  font-weight: ${({ theme }) => theme.typography.fontWeightLight};
 `;
