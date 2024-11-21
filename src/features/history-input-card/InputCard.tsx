@@ -1,7 +1,7 @@
 import { CloseBox } from "../../assets/icons";
 import { TextButton } from "../../components/Button.styles";
 import { Flex } from "../../components/flex/Flex.styles";
-import Typography from "../../components/typography/Typography.styles";
+import { CoinSelect } from "../coin-select/CoinSelect";
 
 interface InputCardProps {
   toggleShowInput: () => void;
@@ -10,8 +10,8 @@ interface InputCardProps {
 export const InputCard: React.FC<InputCardProps> = ({ toggleShowInput }) => {
   return (
     <Flex gap='0.5rem' direction='column'>
-      <Flex justify='space-between'>
-        <Typography>Input</Typography>
+      <Flex align='flex-start'>
+        <CoinSelect />
         <TextButton onClick={() => toggleShowInput()}>
           <CloseBox />
         </TextButton>
