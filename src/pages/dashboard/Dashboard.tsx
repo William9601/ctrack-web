@@ -4,9 +4,9 @@ import {
   GridItemThree,
   GridItemTwo,
 } from "./Dashboard.styles";
-import { HistoryCard } from "../../features/history-card/HistoryCard";
 import { PortfolioCard } from "../../features/portfolio-card/PortfolioCard";
 import { TotalCard } from "../../features/total-card/TotalCard";
+import { HistoryInputCard } from "../../features/history-input-card/HistoryInputCard";
 
 export const Dashboard = () => {
   return (
@@ -18,7 +18,7 @@ export const Dashboard = () => {
         <PortfolioCard />
       </GridItemTwo>
       <GridItemThree>
-        <HistoryCard />
+        <HistoryInputCard />
       </GridItemThree>
     </GridContainer>
   );
